@@ -1,10 +1,2 @@
-// #[cfg(test)]
-// mod tests {
-//     use super::*;
-//
-//     #[test]
-//     fn it_works() {
-//     }
-// }
-
-mod problem4;
+// only useful for rust_anlayzer
+mod problem1;
