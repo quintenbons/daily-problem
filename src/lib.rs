@@ -1,2 +1,2 @@
 // only useful for rust_anlayzer
-mod problem1;
+mod problem01;
