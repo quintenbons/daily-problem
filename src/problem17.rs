@@ -13,6 +13,14 @@ mod tests {
         assert_eq!(get_longest(&filesystem), 32);
         assert_eq!(get_longest(""), 0);
     }
+
+    #[test]
+    #[should_panic]
+    fn it_is_safe() {
+        let wrong_fs = "dir\n\t\tfile.txt";
+
+        get_longest(wrong_fs);
+    }
 }
 
 use std::cmp::Ordering;
