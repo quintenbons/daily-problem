@@ -1,6 +1,9 @@
 #![allow(dead_code)]
 /// Hard - Google
 /// Maximum value of subarray
+/// suboptimal solution, because it's still O(n * k) in worst
+/// case scenario. Note: even online I couldn't find an optimal
+/// solution even if people claim this one to be optimal.
 
 #[cfg(test)]
 mod tests {
