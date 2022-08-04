@@ -1,6 +1,6 @@
 #![allow(dead_code)]
-/// # Hard - Amazon
-/// Unique ways to go up stairs
+//! # Hard - Amazon
+//! Unique ways to go up stairs
 
 #[cfg(test)]
 mod tests {

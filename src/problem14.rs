@@ -1,6 +1,6 @@
 #![allow(dead_code)]
-/// # Medium - Google
-/// Monte Carlo method
+//! # Medium - Google
+//! Monte Carlo method
 
 #[cfg(test)]
 mod tests {

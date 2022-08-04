@@ -1,9 +1,9 @@
-/// Hard - Stripe
-/// Finding lowest positive integer missing from vector
-///
-/// # Complexity goal
-/// Time: O(N)
-/// Space: O(1)
+//! Hard - Stripe
+//! Finding lowest positive integer missing from vector
+//!
+//! # Complexity goal
+//! Time: O(N)
+//! Space: O(1)
 
 #[cfg(test)]
 mod tests {

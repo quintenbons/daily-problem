@@ -1,5 +1,5 @@
-/// # Easy - Google
-/// Target sum of two numbers of an array
+//! # Easy - Google
+//! Target sum of two numbers of an array
 
 #[cfg(test)]
 mod tests {

@@ -1,7 +1,7 @@
 #![allow(dead_code)]
-/// # Hard - Amazon
-/// largest substring with max number of differing
-/// characters
+//! # Hard - Amazon
+//! largest substring with max number of differing
+//! characters
 
 #[cfg(test)]
 mod tests {

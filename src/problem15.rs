@@ -1,6 +1,6 @@
 #![allow(dead_code)]
-/// # Medium - Facebook
-/// random selection in a stream
+//! # Medium - Facebook
+//! random selection in a stream
 
 #[cfg(test)]
 mod tests {

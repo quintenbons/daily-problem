@@ -1,8 +1,7 @@
 #![allow(dead_code)]
-
-/// # Medium - Apple
-/// Job scheduling there are lots of ways to implement this
-/// This is a great opportunity to implement heaps.
+//! # Medium - Apple
+//! Job scheduling there are lots of ways to implement this
+//! This is a great opportunity to implement heaps.
 use std::sync::mpsc;
 use std::thread::{self, JoinHandle};
 use std::time::{Duration, Instant};

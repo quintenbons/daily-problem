@@ -1,6 +1,6 @@
 #![allow(dead_code)]
-/// Hard - Google
-/// FS longest path
+//! Hard - Google
+//! FS longest path
 
 #[cfg(test)]
 mod tests {

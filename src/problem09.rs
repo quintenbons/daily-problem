@@ -1,5 +1,5 @@
-/// # Hard - Airbnb
-/// Largest sum of non-adjacent numbers
+//! # Hard - Airbnb
+//! Largest sum of non-adjacent numbers
 
 #[cfg(test)]
 mod tests {

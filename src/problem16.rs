@@ -1,6 +1,6 @@
 #![allow(dead_code)]
-/// Easy - Twitter
-/// e-commerce record last N order ids in a log
+//! Easy - Twitter
+//! e-commerce record last N order ids in a log
 
 #[cfg(test)]
 mod tests {

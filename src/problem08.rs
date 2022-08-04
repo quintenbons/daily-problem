@@ -1,5 +1,5 @@
-/// # Easy - Google
-/// Unival subtree count
+//! # Easy - Google
+//! Unival subtree count
 
 #[cfg(test)]
 mod tests {

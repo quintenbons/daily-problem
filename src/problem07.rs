@@ -1,6 +1,6 @@
-/// # Medium - Facebook
-/// Decoding a message from integers to
-/// the english alphabet
+//! # Medium - Facebook
+//! Decoding a message from integers to
+//! the english alphabet
 
 #[cfg(test)]
 mod tests {

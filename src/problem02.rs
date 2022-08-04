@@ -1,5 +1,5 @@
-/// Hard - Uber
-/// Multiplication over an array
+//! Hard - Uber
+//! Multiplication over an array
 
 #[cfg(test)]
 mod tests {

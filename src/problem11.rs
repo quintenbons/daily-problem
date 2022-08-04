@@ -1,9 +1,9 @@
 #![allow(dead_code)]
-/// # Medium - Twitter
-/// Autocomplete system, good hashtable exercice
-/// could be made more efficient since I use Strings
-/// and use String::push_str a lot. I could just use
-/// &mut Strings to make it more efficient
+//! # Medium - Twitter
+//! Autocomplete system, good hashtable exercice
+//! could be made more efficient since I use Strings
+//! and use String::push_str a lot. I could just use
+//! &mut Strings to make it more efficient
 
 #[cfg(test)]
 mod tests {

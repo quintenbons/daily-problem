@@ -1,5 +1,5 @@
-/// Medium - Google
-/// Serializing data structures into strings
+//! Medium - Google
+//! Serializing data structures into strings
 
 #[cfg(test)]
 mod tests {
