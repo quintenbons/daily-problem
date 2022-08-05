@@ -31,15 +31,35 @@ enum Chain {
 
 impl Chain {
     fn new() -> Chain {
-        unimplemented!();
+        Chain::Empty
     }
 
     fn new_node(id: usize, next: Self) -> Self {
-        unimplemented!();
+        Chain::Node(Node {
+            id,
+            next: Box::new(next),
+        })
     }
 
     fn from_vec(vector: &Vec<usize>) -> Self {
-        unimplemented!();
+        if vector.is_empty() {
+            return Chain::new();
+        }
+
+        let mut res = Chain::new_node(*vector.last().unwrap(), Chain::Empty);
+
+        for id in vector.iter().rev().skip(1) {
+            res = Chain::new_node(*id, res);
+        }
+
+        res
+    }
+
+    fn next<'a>(&'a self) -> &'a Chain {
+        match self {
+            Self::Empty => self,
+            Self::Node(node) => node.next.as_ref(),
+        }
     }
 }
 
@@ -47,5 +67,36 @@ impl Chain {
 /// there is only one, but gives the on closest to
 /// chain1's head if there are multiple
 fn find_link(chain0: &Chain, chain1: &Chain) -> Option<usize> {
-    unimplemented!();
+    // Make a set containing all ids of chain0
+    let mut seen: HashSet<usize> = HashSet::new();
+    let mut actual = chain0;
+
+    loop {
+        match actual {
+            Chain::Node(node) => {
+                seen.insert(node.id);
+            }
+            _ => break,
+        }
+
+        actual = actual.next();
+    }
+
+    // Find first node of chain1 with seen id
+    actual = chain1;
+
+    loop {
+        match actual {
+            Chain::Node(node) => {
+                if seen.contains(&node.id) {
+                    return Some(node.id);
+                }
+            }
+            _ => break,
+        }
+
+        actual = actual.next();
+    }
+
+    None
 }
