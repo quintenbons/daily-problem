@@ -18,7 +18,36 @@ mod tests {
 }
 
 /// From a vector of lecture start and stop points
-/// find the minimum amount of rooms needed
+/// find the minimum amount of rooms needed. I could
+/// not find better than O(n * log(n))...
 fn min_rooms(lectures: &Vec<(u32, u32)>) -> u32 {
-    unimplemented!();
+    let mut starts = Vec::with_capacity(lectures.len());
+    let mut stops = Vec::with_capacity(lectures.len());
+
+    for (start, stop) in lectures {
+        starts.push(*start);
+        stops.push(*stop);
+    }
+
+    starts.sort();
+    stops.sort();
+
+    let mut overlaping = 0;
+    let mut highest = 0;
+
+    let mut start_idx = 0;
+    let mut stop_idx = 0;
+
+    while start_idx < starts.len() && stop_idx < stops.len() {
+        if starts[start_idx] < stops[stop_idx] {
+            start_idx += 1;
+            overlaping += 1;
+            highest = overlaping.max(highest);
+        } else {
+            stop_idx += 1;
+            overlaping -= 1;
+        }
+    }
+
+    highest
 }
